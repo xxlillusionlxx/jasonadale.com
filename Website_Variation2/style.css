@@ -1,0 +1,83 @@
+
+
+body {
+    background-color: rgba(33, 33, 33, 0.84);;
+}
+
+#wrap {
+
+    width: 900px;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+
+}
+
+
+#outerRect {
+    width: 850px;
+    height: 325px;
+    align-content: center;
+    position: relative;
+    background-color: gainsboro;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    border: thin;
+    border-radius: 10px;
+}
+
+#innerRect {
+    border-radius: 10px;
+    position: relative;
+    top: -43.5%;
+    left: 45px;
+    padding: 5px;
+    width: 800px;
+    height: 275px;
+    opacity: 5;
+    background-color: #3fc7ff;
+
+}
+
+#facebook {
+    position: relative;
+    height: 256px;
+    width: 256px;
+    background-size: contain;
+    background-image: url("1395834593_Aquicon-Facebook.png");
+
+}
+
+#linkedIn {
+    position: relative;
+    height: 256px;
+    width: 256px;
+    top: -256px;
+    left: 258px;
+    background-size: contain;
+    background-image: url("1395834573_Aquicon-Linkedin.png");
+}
+
+#github {
+    position: relative;
+    height: 256px;
+    width: 256px;
+    top: -512px;
+    left: 516px;
+    background-size: contain;
+    background-image: url("1395834655_Aquicon-Github.png");
+}
+
+#pee {
+    color: rgba(243, 255, 250, 0.94);
+    font-family: Lucida Console;
+    top: -710px;
+    font-size: 325%;
+    position: relative;
+    text-align: center;
+
+
+}

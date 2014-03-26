@@ -1,0 +1,106 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-image: url("seamless-pattern-of-circuit-board-grey.png");
+}
+
+#wrap {
+	margin: 0 auto;
+	width: 1024px;
+	height: 1000px;
+
+}
+
+#header {
+	position: static;
+	background-image: url("old-paper-background.jpg");
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	height: 250px;
+	width: 900px;
+	moz-box-shadow:    2px 0px 1px 1px #C8C5C5;
+  	-webkit-box-shadow: 2px 0px 1px 1px #C8C5C5;
+  	box-shadow:         2px 0px 1px 1px #C8C5C5;
+}
+
+#border {
+	position: relative;
+	background-color:#E9E9E9;
+	width: 900px;
+	height: 4px;
+}
+
+#border2 {
+	position: relative;
+	background-color:#E9E9E9;
+	width: 900px;
+	height: 4px;
+	top: -60px;
+}
+
+#projects {
+	position:relative;
+	width: 200px;
+	height: 20px;
+	background-color: #D25759;
+	border-right-color:#C8C5C5;
+	text-align:center;
+	color:#E1E0E0;
+	text-shadow: -1px -1px -1px #989898;
+}
+
+#linkedin {
+	position:relative;
+	width: 200px;
+	height: 20px;
+	top: -20px;
+	left: 201px;
+	background-color: #D25759;
+	text-align:center;
+	color:#E1E0E0;
+	text-shadow:1px 1px 1px #989898;
+	
+}
+
+#resume {
+	position:relative;
+	top: -40px;
+	left: 402px;
+	width: 200px;
+	height: 20px;
+	background-color: #D25759;
+	border-right-color:#C8C5C5;
+	text-align:center;
+	color:#E1E0E0;
+	text-shadow:1px 1px 1px #989898;
+}
+
+#restOfSpace {
+	position: relative;
+	top: -60px;
+	left: 603px;
+	width: 297px;
+	height: 20px;
+	background-color: #D25759;
+}
+
+#bodyText {
+	position:relative;
+	width: 876px;
+	height: auto;
+	color:	#6D6464;
+	top: -60px;
+    background-image: url("drywall-texture-2394.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+	moz-box-shadow:    2px 0px 1px 1px #C8C5C5;
+  	-webkit-box-shadow: 2px 0px 1px 1px #C8C5C5;
+  	box-shadow:         2px 0px 1px 1px #C8C5C5;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	align-content:center;
+	padding:12px;
+	text-indent:15px;
+
+}

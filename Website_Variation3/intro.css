@@ -15,9 +15,42 @@ body {
 	animation-delay: 6s;
 }
 
+#jumbo {
+	visibility: hidden;
+	position: relative;
+	
+	-webkit-animation-delay: 5s;
+	-moz-animation-delay: 5s;
+	-o-animation-delay: 5s;
+	animation-delay: 5s;
+}
+#jumbo2 {
+	position: relative;
+	top: 50px;
+	visibility: hidden;
+	width: 60%;
+	float:right;
+	
+	-webkit-animation-delay: 5s;
+	-moz-animation-delay: 5s;
+	-o-animation-delay: 5s;
+	animation-delay: 5s;
+}
+#projectImgs {
+	position: relative;
+	top: 50px;
+	visibility: hidden;
+	width: 35%;
+	float: left;
+	
+	-webkit-animation-delay: 5s;
+	-moz-animation-delay: 5s;
+	-o-animation-delay: 5s;
+	animation-delay: 5s;
+}
 .first-wrapper {
 	position: relative;
-	height: 600px;
+	height: 775px;
 	width: auto;
 	background-color: #333;
 }

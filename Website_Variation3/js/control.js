@@ -4,7 +4,7 @@ $(function () {
 		Animate opening words.
 		Sequence: div #one fades in, then orange bottom border fades in, and so on
 	*/
-	
+		
 	$('#one').css('visibility', 'visible');
 	$('#first').addClass('animated fadeInLeft');
 	
@@ -36,7 +36,17 @@ $(function () {
 	$('#vert').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
 		$('#name').css('visibility', 'visible');
 
+		$('#jumbo').css('visibility', 'visible');
+		$('#jumbo2').css('visibility', 'visible');
+		
+		$('#projectImgs').css('visibility', 'visible');
+		
 		$('#name').addClass('animated bounceInDown');
+		
+		$('#projectImgs').addClass('animated fadeInUp');
+		
+		$('#jumbo').addClass('animated fadeInUp');
+		$('#jumbo2').addClass('animated fadeInUp');
 	});
 
 });

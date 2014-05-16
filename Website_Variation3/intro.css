@@ -10,6 +10,9 @@ body {
 	font-size: 5em;
 
 	-webkit-animation-delay: 6s;
+	-moz-animation-delay: 6s;
+	-o-animation-delay: 6s;
+	animation-delay: 6s;
 }
 .row > div {
 	visibility:hidden;
@@ -31,6 +34,15 @@ body {
 .stuff {
 	-webkit-animation: scaleDown 3s ease-out 3s;
 	-webkit-animation-fill-mode: both;
+
+	-moz-animation: scaleDown 3s ease-out 3s;
+	-moz-animation-fill-mode: both;
+
+	-o-animation: scaleDown 3s ease-out 3s;
+	-o-animation-fill-mode: both;
+
+	animation: scaleDown 3s ease-out 3s;
+	animation-fill-mode: both;
 }
 
 @-webkit-keyframes scaleDown {
@@ -47,13 +59,55 @@ body {
 	} 
 }
 
+@-moz-keyframes scaleDown {
+	from {
+		-moz-transform: scale(1.0);
+		top: 350px;
+		left: 0%;
+	}
 
+	to {
+		-moz-transform: scale(0.5);
+		top: -20px;
+		left: -2%;
+	} 
+}
 
+@-o-keyframes scaleDown {
+	from {
+		-o-transform: scale(1.0);
+		top: 350px;
+		left: 0%;
+	}
+
+	to {
+		-o-transform: scale(0.5);
+		top: -20px;
+		left: -2%;
+	} 
+}
+
+@keyframes scaleDown {
+	from {
+		transform: scale(1.0);
+		top: 350px;
+		left: 0%;
+	}
+
+	to {
+		transform: scale(0.5);
+		top: -20px;
+		left: -2%;
+	} 
+}
 #vert {
 	position: relative;
 	top: 350px;
 
 	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-o-animation-delay: 1s;
+	animation-delay: 1s;
 }
 
 

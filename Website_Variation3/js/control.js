@@ -27,12 +27,16 @@ $(function () {
 	$('#third').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
 		$('#three').css('border-bottom-style', 'solid');
 		$('#three').css('border-bottom-color', 'orange');
-		
 	});
-	
-	$('#vert').on('click', function(){
-		$('#vert').addClass('stuff');
+
+	$('#three').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+		$('#vert').addClass('stuff');	
 	});
-	
-	
+
+	$('#vert').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+		$('#name').css('visibility', 'visible');
+
+		$('#name').addClass('animated bounceInDown');
+	});
+
 });

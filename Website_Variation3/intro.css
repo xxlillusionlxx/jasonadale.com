@@ -1,5 +1,5 @@
 body {
-	background-color: #333;
+	background-color: gray;
     color: #fff;
     text-align: center;
     text-shadow: 0 1px 3px rgba(0,0,0,.5);
@@ -13,6 +13,13 @@ body {
 	-moz-animation-delay: 6s;
 	-o-animation-delay: 6s;
 	animation-delay: 6s;
+}
+
+.first-wrapper {
+	position: relative;
+	height: 600px;
+	width: auto;
+	background-color: #333;
 }
 .row > div {
 	visibility:hidden;

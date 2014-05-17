@@ -1,7 +1,7 @@
 $(function () {
 	
 	/* 
-		Animate opening words.
+		Animate opening words, then fade in rest of layout.
 		Sequence: div #one fades in, then orange bottom border fades in, and so on
 	*/
 		

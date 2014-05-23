@@ -10,7 +10,7 @@ $(function () {
 	
 	$('#first').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
 		$('#one').css('border-bottom-style', 'solid');
-		$('#one').css('border-bottom-color', 'orange');
+		$('#one').css('border-bottom-color', '#7a7a8a');
 		
 		$('#two').css('visibility', 'visible');
 		$('#second').addClass('animated fadeInUp');
@@ -18,7 +18,7 @@ $(function () {
 	
 	$('#second').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
 		$('#two').css('border-bottom-style', 'solid');
-		$('#two').css('border-bottom-color', 'orange');
+		$('#two').css('border-bottom-color', '#7a7a8a');
 		
 		$('#three').css('visibility', 'visible');
 		$('#third').addClass('animated fadeInRight');
@@ -26,7 +26,7 @@ $(function () {
 	
 	$('#third').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
 		$('#three').css('border-bottom-style', 'solid');
-		$('#three').css('border-bottom-color', 'orange');
+		$('#three').css('border-bottom-color', '#7a7a8a');
 	});
 
 	$('#three').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
@@ -39,11 +39,13 @@ $(function () {
 		$('#jumbo').css('visibility', 'visible');
 		$('#jumbo2').css('visibility', 'visible');
 		
-		$('#projectImgs').css('visibility', 'visible');
+		$('#umassComplete').css('visibility', 'visible');
+		$('#compass').css('visibility', 'visible');
 		
 		$('#name').addClass('animated bounceInDown');
 		
-		$('#projectImgs').addClass('animated fadeInUp');
+		$('#umassComplete').addClass('animated fadeInUp');
+		$('#compass').addClass('animated fadeInUp');
 		
 		$('#jumbo').addClass('animated fadeInUp');
 		$('#jumbo2').addClass('animated fadeInUp');

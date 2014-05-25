@@ -30,7 +30,8 @@ $(function () {
 	});
 
 	$('#three').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-		$('#vert').addClass('stuff');	
+		$('#vert').addClass('stuff');
+		//$('#vert2').addClass('stuff');	
 	});
 
 	$('#vert').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
@@ -41,11 +42,19 @@ $(function () {
 		
 		$('#umassComplete').css('visibility', 'visible');
 		$('#compass').css('visibility', 'visible');
+		$('#umassCompleteIMG').css('visibility', 'visible');
+		$('#compassIMG').css('visibility', 'visible');
+		$('#cache').css('visibility', 'visible');
+		$('#cacheIMG').css('visibility', 'visible');
 		
 		$('#name').addClass('animated bounceInDown');
 		
 		$('#umassComplete').addClass('animated fadeInUp');
 		$('#compass').addClass('animated fadeInUp');
+		$('#umassCompleteIMG').addClass('animated fadeInUp');
+		$('#compassIMG').addClass('animated fadeInUp');
+		$('#cache').addClass('animated fadeInUp');
+		$('#cacheIMG').addClass('animated fadeInUp');
 		
 		$('#jumbo').addClass('animated fadeInUp');
 		$('#jumbo2').addClass('animated fadeInUp');

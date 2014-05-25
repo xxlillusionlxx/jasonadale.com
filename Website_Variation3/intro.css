@@ -64,9 +64,25 @@ body {
 	background-color: transparent;
 	color: #f7f7fa;
 	
-	-webkit-box-shadow: 0 8px 6px -6px black;
-	-moz-box-shadow: 0 8px 6px -6px black;
-	box-shadow: 0 8px 6px -6px black;
+	-webkit-animation-delay: 5s;
+	-moz-animation-delay: 5s;
+	-o-animation-delay: 5s;
+	animation-delay: 5s;
+}
+
+#umassCompleteIMG {
+	position: relative;
+	visibility: hidden;
+	top: 35px;
+	width: 48%;
+	float: left;
+	text-shadow: 0 1px 3px rgba(0,0,0,.5);
+	/*background-color: #1b1b24;*/
+	background-color: transparent;
+	
+
+	
+	color: #f7f7fa;
 	
 	-webkit-animation-delay: 5s;
 	-moz-animation-delay: 5s;
@@ -84,9 +100,59 @@ body {
 	background-color: transparent;
 	color: #f7f7fa;
 	
-	-webkit-box-shadow: 0 8px 6px -6px black;
-	-moz-box-shadow: 0 8px 6px -6px black;
-	box-shadow: 0 8px 6px -6px black;
+	-webkit-animation-delay: 5s;
+	-moz-animation-delay: 5s;
+	-o-animation-delay: 5s;
+	animation-delay: 5s;
+}
+#compassIMG {
+	position: relative;
+	visibility: hidden;
+	top: 35px;
+	width: 48%;
+	float: right;
+	text-shadow: 0 1px 3px rgba(0,0,0,.5);
+	/*background-color: #1b1b24;*/
+	background-color: transparent;
+	color: #f7f7fa;
+	
+	-webkit-animation-delay: 5s;
+	-moz-animation-delay: 5s;
+	-o-animation-delay: 5s;
+	animation-delay: 5s;
+}
+
+#cache {
+	position: relative;
+	visibility: hidden;
+	top: 35px;
+	width: 48%;
+	float: right;
+	text-shadow: 0 1px 3px rgba(0,0,0,.5);
+	/*background-color: #1b1b24;*/
+	background-color: transparent;
+	color: #f7f7fa;
+
+	-webkit-animation-delay: 5s;
+	-moz-animation-delay: 5s;
+	-o-animation-delay: 5s;
+	animation-delay: 5s;
+}
+#cacheIMG {
+	position: relative;
+	visibility: hidden;
+	top: 35px;
+	width: 48%;
+	height: 400px;
+	float: right;
+	text-shadow: 0 1px 3px rgba(0,0,0,.5);
+	/*background-color: #1b1b24;*/
+	background-color: transparent;
+	background-image:url("androidIcon.png");
+	background-size:250px 250px;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #f7f7fa;
 	
 	-webkit-animation-delay: 5s;
 	-moz-animation-delay: 5s;

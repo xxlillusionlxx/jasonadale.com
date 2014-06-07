@@ -60,7 +60,6 @@ body {
 	width: 48%;
 	float: right;
 	text-shadow: 0 1px 3px rgba(0,0,0,.5);
-	/*background-color: #1b1b24;*/
 	background-color: transparent;
 	color: #f7f7fa;
 	
@@ -75,13 +74,11 @@ body {
 	visibility: hidden;
 	top: 35px;
 	width: 48%;
+	height: 400px;
 	float: left;
-	text-shadow: 0 1px 3px rgba(0,0,0,.5);
-	/*background-color: #1b1b24;*/
 	background-color: transparent;
-	
+	text-align: left;
 
-	
 	color: #f7f7fa;
 	
 	-webkit-animation-delay: 5s;
@@ -96,7 +93,6 @@ body {
 	width: 48%;
 	float: right;
 	text-shadow: 0 1px 3px rgba(0,0,0,.5);
-	/*background-color: #1b1b24;*/
 	background-color: transparent;
 	color: #f7f7fa;
 	
@@ -110,10 +106,10 @@ body {
 	visibility: hidden;
 	top: 35px;
 	width: 48%;
-	float: right;
-	text-shadow: 0 1px 3px rgba(0,0,0,.5);
-	/*background-color: #1b1b24;*/
+	float: left;
 	background-color: transparent;
+	text-align: left;
+
 	color: #f7f7fa;
 	
 	-webkit-animation-delay: 5s;
@@ -129,7 +125,6 @@ body {
 	width: 48%;
 	float: right;
 	text-shadow: 0 1px 3px rgba(0,0,0,.5);
-	/*background-color: #1b1b24;*/
 	background-color: transparent;
 	color: #f7f7fa;
 
@@ -146,7 +141,6 @@ body {
 	height: 400px;
 	float: right;
 	text-shadow: 0 1px 3px rgba(0,0,0,.5);
-	/*background-color: #1b1b24;*/
 	background-color: transparent;
 	background-image:url("androidIcon.png");
 	background-size:250px 250px;
@@ -173,7 +167,7 @@ body {
 	border-right-style: none;
 	border-bottom-color: transparent;
 
-	/* Orange border-bottom transition */
+	/* Grey border-bottom transition */
 	transition: border-bottom-color 2s linear;
 	-moz-transition: border-bottom-color 2s linear;   
 	-o-transition: border-bottom-color 2s linear; 

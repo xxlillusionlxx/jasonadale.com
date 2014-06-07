@@ -14,8 +14,9 @@
 	
 <!-- Bootstrap core JavaScript
       ================================================== -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script src="js/jquery-1.11.0.min.js"></script>
 	  <script src="js/bootstrap.min.js"></script>
+	  <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=c&skin=sunburst"></script>
 	  <script src="js/docs.min.js"></script>
 	  <script src="js/control.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -51,13 +52,46 @@
 			  <h1>Projects</h1>
 		  </div>
 		  
-		  <div class="jumbotron" id="umassComplete"><h2><span id="letter">Cache Simulator IMAGE</span></h2><p>Constructed the cache data structures. Then read input from supplied trace files, 			extracting relevant information from the inputted memory addresses using bitwise operation. The LRU cache replacement algorithm was implemented to store most recently read 			trace details in the cache. Written in C.</p></div>
+		  <div class="jumbotron" id="umassComplete"><h2><span id="letter">Cache Simulator</span></h2><p>Constructed the cache data structures. Then read input from supplied 			trace files, extracting relevant information from the inputted memory addresses using bitwise operation. The LRU cache replacement algorithm was implemented to store most 			recently read trace details in the cache. Written in C.</p></div>
 		  
-		  <div class="jumbotron" id="umassCompleteIMG"><h2><span id="letter">UMC IMAGE SPOT</span></h2><p>An informational app for students at UMass Amherst. Information about the 			surrounding area, such as restaurants, delivery services, and nightlife as well as bus schedules, a campus map, and relevant UMass website links all aggregated into one 			android app. Written in Java, with use of XML, utilizing the Android SDK.</p></div>
+		  <div class="jumbotron" id="umassCompleteIMG">
+			  <i>Note: code indenting might be screwed up</i>
+			  <pre class="prettyprint">void run_cpu(CPU* cpu) {
+  TraceLine trace_line;
+  while (read_address(cpu, &trace_line) != EOF) {
+    cpu->address_count++;
+    AccessResult result = cache_access(cpu->cache, &trace_line);
+    if (result == HIT) {
+      cpu->hits++;
+    }
+    else if (result == COLD_MISS) {
+      cpu->cold++;
+    }
+    else {
+      cpu->conflict++;
+    }
+  }
+  ...</pre></div>
 		  
-		  <div class="jumbotron" id="compass"><h2><span id="letter">Compass</span></h2><p>Worked in a team to create a framework that universities can use to create a website which 			directs their students through everything they need to accomplish before they return to school for their next semester, providing a streamlined experience for students, 			alleviating stress that comes with dealing with school.</p></div>
+		  <div class="jumbotron" id="compass"><h2><span id="letter">Compass</span></h2><p>I worked in a team to create a framework that universities can use to create a website which directs their students through everything they need to accomplish before they return to school for their next semester, providing a streamlined experience for students, alleviating stress that comes with dealing with school. </p> <p>I was repsonsible for connecting the frontend with the backend, and also worked on a few frontend items. I used nodeJS+Express, EJS, MongoDB, and JQuery and pure javascript.</p></div>
 		  
-		  <div class="jumbotron" id="compassIMG"><h2><span id="letter">Compass IMAGE</span></h2><p>Worked in a team to create a framework that universities can use to create a 			website which directs their students through everything they need to accomplish before they return to school for their next semester, providing a streamlined 			  			  experience for students, alleviating stress that comes with dealing with school.</p></div>
+		  <div class="jumbotron" id="compassIMG">
+			  
+		  	<pre class="prettyprint lang:js">
+MongoClient.connect('mongodb://localhost:27017',function(err,db){
+	var users = db.collection('users');	
+	if( newUsr != undefined ){
+		console.log(newUsr.length);
+
+		if(newUsr.length > 5) {
+			users.update({username: user.username}, { $set: {username: newUsr} },function(err,result){
+				if (err) throw err;
+			});
+			req.flash('success', 'Username has been changed!');
+			res.redirect('settings');
+		}
+		</pre>
+		  </div>
 		  
 		  <div class="jumbotron" id="cache"><h2><span id="letter">UMass Complete</span></h2><p>An informational app for students at UMass Amherst. Information about the 			surrounding area, such as restaurants, delivery services, and nightlife as well as bus schedules, a campus map, and relevant UMass website links all aggregated into one 			android app. Written in Java, with use of XML, utilizing the Android SDK.</p></div>
 		  
@@ -65,6 +99,56 @@
 		  
 	  </div>
 
+	  <script>
+	  		var typewrite = function(el, slides, period) {
+	  			this.slides = slides;
+	  			this.el = el;
+	  			this.slide = 0;
+	  			this.period = parseInt(period) || 2000;
+	  			this.text = '';
+	  			this.tick();
+	  			this.isDeleting = false;
+	  		};
+	  		typewrite.prototype.tick = function() {
+	  			var i = this.slide % this.slides.length;
+	  			var fullText = this.slides[i];
+
+	  			if (this.isDeleting)
+	  				this.text = fullText.substring(0, this.text.length - 1);
+	  			else 
+	  				this.text = fullText.substring(0, this.text.length + 1);
+
+	  			this.el.innerHTML = this.text;
+
+	  			var that = this;
+	  			var delta = 100 - Math.random()*50;
+
+	  			if (this.isDeleting) { delta /= 2; }
+	  			if (!this.isDeleting && this.text === fullText)
+	  			{
+	  				delta = this.period;
+	  				this.isDeleting = true;
+	  			}
+	  			else if(this.isDeleting && this.text === '')
+	  			{
+	  				this.isDeleting = false;
+	  				this.slide++;
+	  				delta = 500;
+	  			}
+
+	  			setTimeout(function() { that.tick(); }, delta);
+	  		};
+	  		window.onload = function() {
+	  			var elements = document.getElementsByClassName('typewrite');
+	  			for(var i = 0; i < elements.length; i++)
+	  			{
+	  				var slides = elements[i].getAttribute('data-slides');
+	  				var period = elements[i].getAttribute('data-period');
+	  				if(slides)
+	  					new typewrite(elements[i], JSON.parse(slides), period);
+	  			}
+	  		};
+	  	</script>
       
   </body>
 </html>

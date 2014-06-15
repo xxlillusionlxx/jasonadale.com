@@ -60,4 +60,10 @@ $(function () {
 		$('#jumbo2').addClass('animated fadeInUp');
 	});
 
+
+	//Fixes some weird issue with Chrome not showing BG image for projects section until all animations are done..
+	$('#jumbo').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+		$('#projects').addClass('parallax-background');
+		$('#contact').addClass('parallax-background');
+	});
 });

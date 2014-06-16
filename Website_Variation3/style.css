@@ -1,7 +1,6 @@
 body{
 	margin: 0;
 	padding: 0;
-	text-align: center;
 }
 
 
@@ -11,10 +10,10 @@ body{
 	font-size: 5em;
 	color: #fff;
 
-	-webkit-animation-delay: 6s;
-	-moz-animation-delay: 6s;
-	-o-animation-delay: 6s;
-	animation-delay: 6s;
+	-webkit-animation-delay: 5s;
+	-moz-animation-delay: 5s;
+	-o-animation-delay: 5s;
+	animation-delay: 5s;
 }
 
 #jumbo {
@@ -22,10 +21,10 @@ body{
 	color: #f7f7fa;
 	background-color: #464368;
 	
-	-webkit-animation-delay: 5s;
-	-moz-animation-delay: 5s;
-	-o-animation-delay: 5s;
-	animation-delay: 5s;
+	-webkit-animation-delay: 4s;
+	-moz-animation-delay: 4s;
+	-o-animation-delay: 4s;
+	animation-delay: 4s;
 }
 
 .parallax-background {
@@ -83,16 +82,16 @@ body{
 }
 
 .stuff {
-	-webkit-animation: scaleDown 3s ease-out 3s;
+	-webkit-animation: scaleDown 2s ease-out 2s;
 	-webkit-animation-fill-mode: both;
 
-	-moz-animation: scaleDown 3s ease-out 3s;
+	-moz-animation: scaleDown 2s ease-out 2s;
 	-moz-animation-fill-mode: both;
 
-	-o-animation: scaleDown 3s ease-out 3s;
+	-o-animation: scaleDown 2s ease-out 2s;
 	-o-animation-fill-mode: both;
 
-	animation: scaleDown 3s ease-out 3s;
+	animation: scaleDown 2s ease-out 2s;
 	animation-fill-mode: both;
 }
 
@@ -159,4 +158,128 @@ body{
 	-moz-animation-delay: 1s;
 	-o-animation-delay: 1s;
 	animation-delay: 1s;
+}
+
+#jumbo2 {
+	position: relative;
+	top: 50px;
+	visibility: hidden;
+	text-shadow: 0 1px 3px rgba(0,0,0,.5);
+	color: #f7f7fa;
+	background-color: #1b1b24;
+	
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	-moz-box-shadow: 0 8px 6px -6px black;
+	box-shadow: 0 8px 6px -6px black;
+	
+	-webkit-animation-delay: 5s;
+	-moz-animation-delay: 5s;
+	-o-animation-delay: 5s;
+	animation-delay: 5s;
+}
+#letter {
+	color: #1b1b24;
+	text-shadow: 1px 1px 1px #fff;
+}
+#umassComplete {
+	position: relative;
+	visibility: hidden;
+	top: 35px;
+	width: 48%;
+	float: right;
+	text-shadow: 0 1px 3px rgba(0,0,0,.5);
+	background-color: transparent;
+	color: #f7f7fa;
+	
+	-webkit-animation-delay: 5s;
+	-moz-animation-delay: 5s;
+	-o-animation-delay: 5s;
+	animation-delay: 5s;
+}
+
+#umassCompleteIMG {
+	position: relative;
+	visibility: hidden;
+	top: 35px;
+	width: 50%;
+	height: 400px;
+	left: -4px;
+	
+	background-color: transparent;
+	text-align: left;
+	font-size: 1em;
+
+	color: #f7f7fa;
+	
+	-webkit-animation-delay: 5s;
+	-moz-animation-delay: 5s;
+	-o-animation-delay: 5s;
+	animation-delay: 5s;
+}
+#compass {
+	position: relative;
+	visibility: hidden;
+	top: 35px;
+	width: 48%;
+	float: right;
+	text-shadow: 0 1px 3px rgba(0,0,0,.5);
+	background-color: transparent;
+	color: #f7f7fa;
+	
+	-webkit-animation-delay: 5s;
+	-moz-animation-delay: 5s;
+	-o-animation-delay: 5s;
+	animation-delay: 5s;
+}
+#compassIMG {
+	position: relative;
+	visibility: hidden;
+	top: 35px;
+	width: 48%;
+	float: left;
+	background-color: transparent;
+	text-align: left;
+
+	color: #f7f7fa;
+	
+	-webkit-animation-delay: 5s;
+	-moz-animation-delay: 5s;
+	-o-animation-delay: 5s;
+	animation-delay: 5s;
+}
+
+#cache {
+	position: relative;
+	visibility: hidden;
+	top: 35px;
+	width: 48%;
+	float: right;
+	text-shadow: 0 1px 3px rgba(0,0,0,.5);
+	background-color: transparent;
+	color: #f7f7fa;
+
+	-webkit-animation-delay: 5s;
+	-moz-animation-delay: 5s;
+	-o-animation-delay: 5s;
+	animation-delay: 5s;
+}
+#cacheIMG {
+	position: relative;
+	visibility: hidden;
+	top: 35px;
+	width: 48%;
+	height: 400px;
+	float: right;
+	text-shadow: 0 1px 3px rgba(0,0,0,.5);
+	background-color: transparent;
+	background-image:url("androidIcon.png");
+	background-size:250px 250px;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #f7f7fa;
+	
+	-webkit-animation-delay: 5s;
+	-moz-animation-delay: 5s;
+	-o-animation-delay: 5s;
+	animation-delay: 5s;
 }

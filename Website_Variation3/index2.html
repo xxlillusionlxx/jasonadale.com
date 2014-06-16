@@ -15,6 +15,13 @@
 <!-- Bootstrap core JavaScript
       ================================================== -->
       <script src="js/jquery-1.11.0.min.js"></script>
+      <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=c&skin=sunburst"></script>
+
+      <link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css">
+<script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
       <script src="js/parallax.js"></script>
       <script src="js/control.js"></script>
 	  <script src="js/bootstrap.min.js"></script>
@@ -44,7 +51,33 @@
       		</div>
   		</section>
 	
-  		<section id="projects" data-type="background" data-speed="30"> </section>
+  		<section id="projects" data-type="background" data-speed="30">
+      <div class="container"> 
+        <h2>Cache Simulator</h2>
+          <pre><code class="c">
+          void run_cpu(CPU* cpu) {
+            TraceLine trace_line;
+            while (read_address(cpu, &trace_line) != EOF) {
+              cpu->address_count++;
+              AccessResult result = cache_access(cpu->cache, &trace_line);
+              if (result == HIT) {
+                cpu->hits++;
+              }
+              else if (result == COLD_MISS) {
+                cpu->cold++;
+              }   
+              else {
+                cpu->conflict++;
+              }
+            }
+          }
+          </code></pre>
+      </div>
+        <div class="jumbotron"> 
+          <p> I am currently a senior at the University of Masschusetts Amherst studying computer science and economics. My interests span across a variety of subjects. Some of my interests include web/mobile app development, software development, big data, 3d modeling, and anything having to do with financial markets.</p>
+        </div>
+
+      </section>
 
   		<section id="contact" data-type="background" data-speed="30"></section>
   </body>

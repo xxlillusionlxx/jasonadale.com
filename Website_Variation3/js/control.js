@@ -3,6 +3,8 @@ $(function () {
 	/* 
 		Animate opening words, then fade in rest of layout.
 		Sequence: div #one fades in, then orange bottom border fades in, and so on
+
+		Heavy JQuery usuage in this file
 	*/
 		
 	$('#one').css('visibility', 'visible');
@@ -36,28 +38,10 @@ $(function () {
 
 	$('#vert').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
 		$('#name').css('visibility', 'visible');
-
 		$('#jumbo').css('visibility', 'visible');
-		$('#jumbo2').css('visibility', 'visible');
-		
-		$('#umassComplete').css('visibility', 'visible');
-		$('#compass').css('visibility', 'visible');
-		$('#umassCompleteIMG').css('visibility', 'visible');
-		$('#compassIMG').css('visibility', 'visible');
-		$('#cache').css('visibility', 'visible');
-		$('#cacheIMG').css('visibility', 'visible');
 		
 		$('#name').addClass('animated bounceInDown');
-		
-		$('#umassComplete').addClass('animated fadeInUp');
-		$('#compass').addClass('animated fadeInUp');
-		$('#umassCompleteIMG').addClass('animated fadeInUp');
-		$('#compassIMG').addClass('animated fadeInUp');
-		$('#cache').addClass('animated fadeInUp');
-		$('#cacheIMG').addClass('animated fadeInUp');
-		
 		$('#jumbo').addClass('animated fadeInUp');
-		$('#jumbo2').addClass('animated fadeInUp');
 	});
 
 
@@ -66,4 +50,5 @@ $(function () {
 		$('#projects').addClass('parallax-background');
 		$('#contact').addClass('parallax-background');
 	});
+
 });

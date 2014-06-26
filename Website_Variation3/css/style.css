@@ -79,6 +79,10 @@ h1, h2 {
 #contact {
 	background-color: #85957A;
 	position: relative;
+
+	/*-webkit-box-shadow: 1px -25px 3px 16px rgba(133,149,122,1);
+	-moz-box-shadow: 1px -25px 3px 16px rgba(133,149,122,1);
+	box-shadow: 1px -25px 3px 16px rgba(133,149,122,1); */
 }
 
 .row > div {

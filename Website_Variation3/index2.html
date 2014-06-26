@@ -8,24 +8,10 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/sunburst.css" rel="stylesheet">
 	
 	<link href="style.css" rel="stylesheet">
-	<link href="animate.css" rel="stylesheet">
-	
-<!-- Bootstrap core JavaScript
-      ================================================== -->
-      <script src="js/jquery-1.11.0.min.js"></script>
-      <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=c&skin=sunburst"></script>
-
-      <link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css">
-<script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
-
-<script>hljs.initHighlightingOnLoad();</script>
-
-      <script src="js/parallax.js"></script>
-      <script src="js/control.js"></script>
-	  <script src="js/bootstrap.min.js"></script>
-	  <script src="js/docs.min.js"></script>
+	<link href="css/animate.css" rel="stylesheet">
 	  
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -35,14 +21,14 @@
     <![endif]-->
   </head>
   <body>
-  		<section class="parallax-background" id="main" data-type="background" data-speed="30">
+  		<section class="parallax-background" id="main" data-type="background" data-speed="10">
   			<div class="container">
  				<div><p><h1 id="name">Jason Dale</h1></p></div> 
 		  		<div id="vert">
 		  			<div class="row">
-        				<div class="col-md-3 col-md-offset-1" id="one"><p><h2 id="first">Aspiring Developer</h1></p></div>
-						<div class="col-md-3 col-md-offset-1" id="two"><p><h2 id="second">CS Student</h1></p></div>
-						<div class="col-md-3 col-md-offset-1" id="three"><p><h2 id="third">Rising Senior</h1></p></div>
+        				<div class="col-md-3 col-md-offset-1 color" id="one"><p><h2 id="first">Aspiring Developer</h1></p></div>
+						<div class="col-md-3 col-md-offset-1 color" id="two"><p><h2 id="second">CS Student</h1></p></div>
+						<div class="col-md-3 col-md-offset-1 color" id="three"><p><h2 id="third">Rising Senior</h1></p></div>
 		  			</div>
 	  	  		</div>
 		  
@@ -51,9 +37,11 @@
       		</div>
   		</section>
 	
-  		<section id="projects" data-type="background" data-speed="30">
+  		<section class="parallax-background extra" id="projects" data-type="background" data-speed="40">
+
+        <!-- CACHE SIMULATOR -->
       <div class="container"> 
-        <h2>Cache Simulator</h2>
+        <h2 id="title">Cache Simulator</h2>
           <pre><code class="c">
           void run_cpu(CPU* cpu) {
             TraceLine trace_line;
@@ -73,12 +61,66 @@
           }
           </code></pre>
       </div>
-        <div class="jumbotron"> 
-          <p> I am currently a senior at the University of Masschusetts Amherst studying computer science and economics. My interests span across a variety of subjects. Some of my interests include web/mobile app development, software development, big data, 3d modeling, and anything having to do with financial markets.</p>
+        <div class="jumbotron" id="jumboEdit"> 
+          <p> Constructed the cache data structures. Then read input from supplied trace files, extracting relevant information from the inputted memory addresses using bitwise operation. The LRU cache replacement algorithm was implemented to store most recently read trace details in the cache. Written in C.</p>
+        </div>
+
+        <!-- UMass Compass -->
+
+        <div class="container"> 
+        <h2 id="title">Compass</h2>
+          <pre><code class="js">
+          MongoClient.connect('mongodb://localhost:27017',function(err,db){
+            var users = db.collection('users'); 
+            if( newUsr != undefined ){
+              console.log(newUsr.length);
+
+            if(newUsr.length > 5) {
+              users.update({username: user.username}, { $set: {username: newUsr} },function(err,result){
+              if (err) throw err;
+              });
+            req.flash('success', 'Username has been changed!');
+            res.redirect('settings');
+            }
+          </code></pre>
+        </div>
+        <div class="jumbotron" id="jumboEdit"> 
+          <p>I worked in a team to create a framework that universities can use to create a website which directs their students through everything they need to accomplish before they return to school for their next semester, providing a streamlined experience for students, alleviating stress that comes with dealing with school. </p> <p>I was repsonsible for connecting the frontend with the backend, and also worked on a few frontend items. I used nodeJS+Express, EJS, MongoDB, and JQuery and pure javascript.</p>
+        </div>
+
+        <!-- UMass Complete -->
+
+        <div class="container"> 
+        <h2 id="title">UMass Complete</h2>
+          <div id="cacheIMG"></div>
+        </div>
+        <div class="jumbotron" id="jumboEdit"> 
+          <p>An informational app for students at UMass Amherst. Information about the surrounding area, such as restaurants, delivery services, and nightlife as well as bus schedules, a campus map, and relevant UMass website links all aggregated into one android app. Written in Java, with use of XML, utilizing the Android SDK.</p>
+        </div>
+
+
+      </section>
+
+  		<section id="contact" data-type="background" data-speed="30">
+
+        <div class="container">
+          <h2>Resume and Contact Information</h2>
+          <div class="col-md-3 col-md-offset-1" id="contactFormat"><img src="images/linkedin.png" /></div>
+          <div class="col-md-3 col-md-offset-1" id="contactFormat"><a href="https://github.com/xxlillusionlxx"><img src="images/github.png" /></a></div>
+          <div class="col-md-3 col-md-offset-1" id="contactFormat"><img src="images/facebook.png" /></div>
         </div>
 
       </section>
 
-  		<section id="contact" data-type="background" data-speed="30"></section>
+      <!-- Scripts -->
+
+      <script src="js/jquery-1.11.0.min.js"></script>
+      <script src="js/parallax.js"></script>
+      <script src="js/control.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/docs.min.js"></script>
+      <script src="js/highlight.pack.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script>
+
   </body>
 </html>

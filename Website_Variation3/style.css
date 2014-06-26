@@ -7,11 +7,50 @@ h1, h2 {
 	text-align: center;
 }
 
-#title {
-	color: #1b1b24;
-	text-shadow: 0px 1px 18px rgba(255, 255, 255, 1);
+#title { 
+  text-align: center;
+  color: #D8D8D8;
+  text-transform: uppercase;
+  padding: 1px;
+  font-family: 'Raleway', cursive;
+  font-weight: 100;
+  position: relative;
+  border-radius: 2px;
+  background: -webkit-linear-gradient(left, black, #eee, black);
+  background: -moz-linear-gradient(left, black, #eee, black);
+  background: -ms-linear-gradient(left, black, #eee, black);
+  background: -o-linear-gradient(left, black, #eee, black);
+}
+#title:before {
+   content: "";
+  position: absolute;
+  left: 50%;
+  top: -50px;
+  width: 600px;
+  margin-left: -300px;
+  margin-top: -220px;
+  height: 600px;
+  background: -webkit-radial-gradient(50% 50%, ellipse closest-side, #444, black);
+  background: -moz-radial-gradient(50% 50%, ellipse closest-side, #444, black);
+  background: -ms-radial-gradient(50% 50%, ellipse closest-side, #444, black);
+  background: -o-radial-gradient(50% 50%, ellipse closest-side, #444, black);
+  z-index: -1;
+}
+#title span {
+  background: black;
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  letter-spacing: 30px;
+  color: white;
+  animation: comein 1.5s 1 ease-in-out forwards;
 }
 
+@keyframes comein {
+   0% { letter-spacing: 100px; color: rgba(255,255,255,0); }
+   70% { letter-spacing: 20px; }
+   100% { letter-spacing: 30px; color: rgba(255,255,255,1) }
+}
 #name {
 	visibility: hidden;
 	position: relative;
@@ -88,14 +127,15 @@ h1, h2 {
 	border-left-style: none;
 	border-right-style: none;
 	border-bottom-color: transparent;
+	width: auto;
+	height: auto;
 
 	/* Grey border-bottom transition */
 	transition: border-bottom-color 2s linear;
 	-moz-transition: border-bottom-color 2s linear;   
 	-o-transition: border-bottom-color 2s linear; 
 	-webkit-transition: border-bottom-color 2s linear;
-	width: auto;
-	height: auto;
+	
 }
 
 .stuff {

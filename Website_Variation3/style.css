@@ -16,14 +16,11 @@ h1, h2 {
   color: #D8D8D8;
   text-transform: uppercase;
   padding: 1px;
-  font-family: 'Raleway', cursive;
+  font-family: 'Merriweather';
   font-weight: 100;
   position: relative;
   border-radius: 2px;
-  background: -webkit-linear-gradient(left, black, #eee, black);
-  background: -moz-linear-gradient(left, black, #eee, black);
-  background: -ms-linear-gradient(left, black, #eee, black);
-  background: -o-linear-gradient(left, black, #eee, black);
+
 }
 #title:before {
   content: "";
@@ -41,13 +38,14 @@ h1, h2 {
   z-index: -1;
 }
 #title span {
-  background: black;
+  background: transparent;
   display: block;
   padding: 20px;
-  text-decoration: none;
+  text-decoration: bold;
   letter-spacing: 30px;
-  color: white;
-  animation: comein 1.5s 1 ease-in-out forwards;
+  color: #3A2F0B;
+  text-shadow: 0px 1px 1px #4d4d4d;
+  
 }
 
 @keyframes comein {
@@ -62,6 +60,7 @@ h1, h2 {
 	visibility: hidden;
 	position: relative;
 	font-size: 5em;
+	font-family: 'Merriweather';
 	color: #fff;
 
 	-webkit-animation-delay: 5s;
@@ -72,8 +71,10 @@ h1, h2 {
 
 #jumbo {
 	visibility: hidden;;
-	color: #f7f7fa;
-	background-color: #464368;
+	font-family: 'Raleway' , cursive;
+	background-color: transparent;
+	color: #C9B9B9;
+	text-shadow: 0px 1px 1px #4d4d4d;
 	
 	-webkit-animation-delay: 4s;
 	-moz-animation-delay: 4s;
@@ -83,6 +84,7 @@ h1, h2 {
 
 #jumboEdit {
 	background-color: rgba(240, 240, 240, 0.7);
+
 }
 #contactFormat {
 	padding-top: 60px;
@@ -99,7 +101,7 @@ h1, h2 {
 }
 
 #main {
-	background-image: url('images/main.jpg');
+	background-image: url('images/bag2.jpg');
 	background-attachment: fixed;
 	background-origin: initial;
 	background-clip: initial;
@@ -112,7 +114,7 @@ h1, h2 {
 
 #projects {
 	/*background-color: #586C95; */
-	background-image: url('images/projects.jpg');
+	background-image: url('images/bag1.jpg');
 	background-attachment: fixed;
 	
 	background-clip: initial;
@@ -120,16 +122,24 @@ h1, h2 {
 	background-repeat: no-repeat;
 	background-position: 100% 0;
 	position: relative;
+
+	-webkit-box-shadow: 3px 11px 35px 16px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 11px 35px 16px rgba(0,0,0,0.75);
+box-shadow: 3px 11px 35px 16px rgba(0,0,0,0.75);
 }
 
 #contact {
-	background-color: #85957A;
+	background-image: url('images/green_cup.png');
 	position: relative;
+
+	-webkit-box-shadow: 3px 11px 35px 16px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 11px 35px 16px rgba(0,0,0,0.75);
+box-shadow: 3px 11px 35px 16px rgba(0,0,0,0.75);
 }
 
 .row > div {
 	visibility:hidden;
-	border-radius: 5px;
+	border-radius: 2px;
 	border-top-style:none;
 	border-left-style: none;
 	border-right-style: none;
@@ -138,14 +148,25 @@ h1, h2 {
 	height: auto;
 
 	/* Grey border-bottom transition */
-	transition: border-bottom-color 2s linear;
-	-moz-transition: border-bottom-color 2s linear;   
-	-o-transition: border-bottom-color 2s linear; 
-	-webkit-transition: border-bottom-color 2s linear;
+	transition: border-right-color 2s linear;
+	-moz-transition: border-right-color 2s linear;   
+	-o-transition: border-right-color 2s linear; 
+	-webkit-transition: border-right-color 2s linear;
+
+	transition: border-left-color 2s linear;
+	-moz-transition: border-left-color 2s linear;   
+	-o-transition: border-left-color 2s linear; 
+	-webkit-transition: border-left-color 2s linear;
 	
 }
 
+#first, #second, #third {
+	padding-right: 50px;
+	padding-left: -80px;
+}
+
 .stuff {
+	position: relative;
 	-webkit-animation: scaleDown 2s ease-out 2s;
 	-webkit-animation-fill-mode: both;
 
@@ -183,7 +204,7 @@ h1, h2 {
 	to {
 		-moz-transform: scale(0.5);
 		top: -20px;
-		left: -2%;
+		left: 300%;
 	} 
 }
 

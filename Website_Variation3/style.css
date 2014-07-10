@@ -152,11 +152,6 @@ box-shadow: 3px 11px 35px 16px rgba(0,0,0,0.75);
 	-moz-transition: border-right-color 2s linear;   
 	-o-transition: border-right-color 2s linear; 
 	-webkit-transition: border-right-color 2s linear;
-
-	transition: border-left-color 2s linear;
-	-moz-transition: border-left-color 2s linear;   
-	-o-transition: border-left-color 2s linear; 
-	-webkit-transition: border-left-color 2s linear;
 	
 }
 

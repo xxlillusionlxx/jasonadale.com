@@ -31,10 +31,6 @@ h1, h2 {
   margin-left: -300px;
   margin-top: -220px;
   height: 600px;
-  background: -webkit-radial-gradient(50% 50%, ellipse closest-side, #444, black);
-  background: -moz-radial-gradient(50% 50%, ellipse closest-side, #444, black);
-  background: -ms-radial-gradient(50% 50%, ellipse closest-side, #444, black);
-  background: -o-radial-gradient(50% 50%, ellipse closest-side, #444, black);
   z-index: -1;
 }
 #title span {
@@ -43,8 +39,8 @@ h1, h2 {
   padding: 20px;
   text-decoration: bold;
   letter-spacing: 30px;
-  color: #3A2F0B;
-  text-shadow: 0px 1px 1px #4d4d4d;
+  color: #D8D8D8;
+  text-shadow: 0px 1px 1px #424242;
   
 }
 
@@ -101,7 +97,7 @@ h1, h2 {
 }
 
 #main {
-	background-image: url('images/bag2.jpg');
+	background-image: url('images/test.jpg');
 	background-attachment: fixed;
 	background-origin: initial;
 	background-clip: initial;
@@ -114,7 +110,7 @@ h1, h2 {
 
 #projects {
 	/*background-color: #586C95; */
-	background-image: url('images/bag1.jpg');
+	background-image: url('images/test2.jpg');
 	background-attachment: fixed;
 	
 	background-clip: initial;

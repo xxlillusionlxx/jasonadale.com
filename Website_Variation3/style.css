@@ -63,7 +63,7 @@ h1, h2 {
 
 #jumbo {
 	visibility: hidden;;
-	font-family: 'Raleway' , cursive;
+	font-family: 'Raleway';
 	background-color: transparent;
 	color: #C9B9B9;
 	text-shadow: 0px 1px 1px #4d4d4d;
@@ -91,6 +91,12 @@ h1, h2 {
 .parallax-background {
 	min-height: 1080px;
 }
+.arrow {
+	-webkit-animation-delay: 6s;
+	-moz-animation-delay: 6s;
+	-o-animation-delay: 6s;
+	animation-delay: 6s;
+}
 
 #main {
 	background-image: url('images/test.jpg');
@@ -108,7 +114,6 @@ h1, h2 {
 	/*background-color: #586C95; */
 	background-image: url('images/test2.jpg');
 	background-attachment: fixed;
-	
 	background-clip: initial;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -116,8 +121,8 @@ h1, h2 {
 	position: relative;
 
 	-webkit-box-shadow: 3px 11px 35px 16px rgba(0,0,0,0.75);
--moz-box-shadow: 3px 11px 35px 16px rgba(0,0,0,0.75);
-box-shadow: 3px 11px 35px 16px rgba(0,0,0,0.75);
+	-moz-box-shadow: 3px 11px 35px 16px rgba(0,0,0,0.75);
+	box-shadow: 3px 11px 35px 16px rgba(0,0,0,0.75);
 }
 
 #contact {
@@ -125,8 +130,8 @@ box-shadow: 3px 11px 35px 16px rgba(0,0,0,0.75);
 	position: relative;
 
 	-webkit-box-shadow: 3px 11px 35px 16px rgba(0,0,0,0.75);
--moz-box-shadow: 3px 11px 35px 16px rgba(0,0,0,0.75);
-box-shadow: 3px 11px 35px 16px rgba(0,0,0,0.75);
+	-moz-box-shadow: 3px 11px 35px 16px rgba(0,0,0,0.75);
+	box-shadow: 3px 11px 35px 16px rgba(0,0,0,0.75);
 }
 
 .row > div {
@@ -231,11 +236,7 @@ box-shadow: 3px 11px 35px 16px rgba(0,0,0,0.75);
 	background-repeat: no-repeat;
 	background-position: center;
 	color: #f7f7fa;
-	
-/*	-webkit-animation-delay: 5s;
-	-moz-animation-delay: 5s;
-	-o-animation-delay: 5s;
-	animation-delay: 5s; */
+
 }
 
 #vert {

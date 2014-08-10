@@ -6,7 +6,8 @@ $(function () {
 
 		Heavy JQuery usuage in this file
 	*/
-		
+	$('.arrow').hide();
+
 	$('#one').css('visibility', 'visible');
 	$('#first').addClass('animated fadeInLeft');
 	
@@ -25,30 +26,19 @@ $(function () {
 		$('#three').css('visibility', 'visible');
 		$('#third').addClass('animated fadeInRight');
 	});
-	
-	$('#third').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-		$('#three').css('border-right-style', 'solid');
-		$('#three').css('border-right-color', '#7a7a8a');
-	});
 
 	$('#three').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-		$('#vert').addClass('stuff');
-		//$('#vert2').addClass('stuff');	
+		$('#vert').addClass('stuff');	
 	});
 
 	$('#vert').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
 		$('#name').css('visibility', 'visible');
 		$('#jumbo').css('visibility', 'visible');
-		
+		$('.arrow').show();
+
+		$('.arrow').addClass('animated fadeInDown');
 		$('#name').addClass('animated bounceInDown');
 		$('#jumbo').addClass('animated fadeInUp');
-	});
-
-
-	//Fixes some weird issue with Chrome not showing BG image for projects section until all animations are done..
-	$('#jumbo').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-		//$('#projects').addClass('parallax-background');
-		
 	});
 
 });

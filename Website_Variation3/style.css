@@ -99,25 +99,23 @@ h1, h2 {
 }
 
 #main {
-	background-image: url('images/test.jpg');
+	background-image: url('images/bg2.png');
 	background-attachment: fixed;
-	background-origin: initial;
-	background-clip: initial;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: 100% 0;
 	position: relative;
 
 }
 
 #projects {
 	/*background-color: #586C95; */
-	background-image: url('images/test2.jpg');
+	background-image: url('images/grey.png');
 	background-attachment: fixed;
+<<<<<<< HEAD
 	background-clip: initial;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 100% 0;
+=======
+>>>>>>> FETCH_HEAD
 	position: relative;
 
 	-webkit-box-shadow: 3px 11px 35px 16px rgba(0,0,0,0.75);
@@ -127,6 +125,7 @@ h1, h2 {
 
 #contact {
 	background-image: url('images/green_cup.png');
+	background-attachment: fixed;
 	position: relative;
 
 	-webkit-box-shadow: 3px 11px 35px 16px rgba(0,0,0,0.75);

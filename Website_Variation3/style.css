@@ -109,13 +109,7 @@ h1, h2 {
 	/*background-color: #586C95; */
 	background-image: url('images/grey.png');
 	background-attachment: fixed;
-<<<<<<< HEAD
-	background-clip: initial;
-	background-size: cover;
-	background-repeat: no-repeat;
 	background-position: 100% 0;
-=======
->>>>>>> FETCH_HEAD
 	position: relative;
 
 	-webkit-box-shadow: 3px 11px 35px 16px rgba(0,0,0,0.75);

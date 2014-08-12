@@ -2,11 +2,9 @@ body{
 	margin: 0;
 	padding: 0;
 }
-
 h1, h2 {
 	text-align: center;
 }
-
 #title { 
   text-align: center;
   color: #D8D8D8;
@@ -39,7 +37,6 @@ h1, h2 {
   text-shadow: 0px 1px 1px #424242;
   
 }
-
 @keyframes comein {
    0% { letter-spacing: 100px; color: rgba(255,255,255,0); }
    70% { letter-spacing: 20px; }
@@ -47,7 +44,6 @@ h1, h2 {
 }
 
 /* End of Title Effect */
-
 #name {
 	visibility: hidden;
 	position: relative;
@@ -60,7 +56,6 @@ h1, h2 {
 	-o-animation-delay: 5s;
 	animation-delay: 5s;
 }
-
 #jumbo {
 	visibility: hidden;;
 	font-family: 'Raleway';
@@ -73,7 +68,6 @@ h1, h2 {
 	-o-animation-delay: 4s;
 	animation-delay: 4s;
 }
-
 #jumboEdit {
 	background-color: rgba(240, 240, 240, 0.7);
 
@@ -97,14 +91,12 @@ h1, h2 {
 	-o-animation-delay: 6s;
 	animation-delay: 6s;
 }
-
 #main {
 	background-image: url('images/bg2.png');
 	background-attachment: fixed;
 	position: relative;
 
 }
-
 #projects {
 	/*background-color: #586C95; */
 	background-image: url('images/grey.png');
@@ -116,7 +108,6 @@ h1, h2 {
 	-moz-box-shadow: 3px 11px 35px 16px rgba(0,0,0,0.75);
 	box-shadow: 3px 11px 35px 16px rgba(0,0,0,0.75);
 }
-
 #contact {
 	background-image: url('images/green_cup.png');
 	background-attachment: fixed;
@@ -126,7 +117,6 @@ h1, h2 {
 	-moz-box-shadow: 3px 11px 35px 16px rgba(0,0,0,0.75);
 	box-shadow: 3px 11px 35px 16px rgba(0,0,0,0.75);
 }
-
 .row > div {
 	visibility:hidden;
 	border-radius: 2px;
@@ -144,12 +134,10 @@ h1, h2 {
 	-webkit-transition: border-right-color 2s linear;
 	
 }
-
 #first, #second, #third {
 	padding-right: 50px;
 	padding-left: -80px;
 }
-
 .stuff {
 	position: relative;
 	-webkit-animation: scaleDown 2s ease-out 2s;
@@ -164,7 +152,6 @@ h1, h2 {
 	animation: scaleDown 2s ease-out 2s;
 	animation-fill-mode: both;
 }
-
 @-webkit-keyframes scaleDown {
 	from {
 		-webkit-transform: scale(1.0);
@@ -178,42 +165,36 @@ h1, h2 {
 		left: -2%;
 	} 
 }
-
 @-moz-keyframes scaleDown {
 	from {
 		-moz-transform: scale(1.0);
 		top: 350px;
 		left: 0%;
 	}
-
 	to {
 		-moz-transform: scale(0.5);
 		top: -20px;
 		left: 300%;
 	} 
 }
-
 @-o-keyframes scaleDown {
 	from {
 		-o-transform: scale(1.0);
 		top: 350px;
 		left: 0%;
 	}
-
 	to {
 		-o-transform: scale(0.5);
 		top: -20px;
 		left: -2%;
 	} 
 }
-
 @keyframes scaleDown {
 	from {
 		transform: scale(1.0);
 		top: 350px;
 		left: 0%;
 	}
-
 	to {
 		transform: scale(0.5);
 		top: -20px;
@@ -231,7 +212,6 @@ h1, h2 {
 	color: #f7f7fa;
 
 }
-
 #vert {
 	position: relative;
 	top: 350px;

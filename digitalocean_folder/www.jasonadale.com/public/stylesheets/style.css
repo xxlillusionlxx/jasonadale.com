@@ -1,0 +1,224 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+h1, h2 {
+	text-align: center;
+}
+#title { 
+  text-align: center;
+  color: #D8D8D8;
+  text-transform: uppercase;
+  padding: 1px;
+  font-family: 'Merriweather';
+  font-weight: 100;
+  position: relative;
+  border-radius: 2px;
+
+}
+#title:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -50px;
+  width: 600px;
+  margin-left: -300px;
+  margin-top: -220px;
+  height: 600px;
+  z-index: -1;
+}
+#title span {
+  background: transparent;
+  display: block;
+  padding: 20px;
+  text-decoration: bold;
+  letter-spacing: 30px;
+  color: #D8D8D8;
+  text-shadow: 0px 1px 1px #424242;
+  
+}
+@keyframes comein {
+   0% { letter-spacing: 100px; color: rgba(255,255,255,0); }
+   70% { letter-spacing: 20px; }
+   100% { letter-spacing: 30px; color: rgba(255,255,255,1) }
+}
+
+/* End of Title Effect */
+#name {
+	visibility: hidden;
+	position: relative;
+	font-size: 5em;
+	font-family: 'Merriweather';
+	color: #fff;
+
+	-webkit-animation-delay: 5s;
+	-moz-animation-delay: 5s;
+	-o-animation-delay: 5s;
+	animation-delay: 5s;
+}
+#jumbo {
+	visibility: hidden;;
+	font-family: 'Raleway';
+	background-color: transparent;
+	color: #C9B9B9;
+	text-shadow: 0px 1px 1px #4d4d4d;
+	
+	-webkit-animation-delay: 4s;
+	-moz-animation-delay: 4s;
+	-o-animation-delay: 4s;
+	animation-delay: 4s;
+}
+#jumboEdit {
+	background-color: rgba(240, 240, 240, 0.7);
+
+}
+#contactFormat {
+	padding-top: 60px;
+	padding-bottom: 30px;
+}
+.extra {
+	padding-bottom: 30px;
+}
+.color {
+	color: #E6E6E6;
+}
+.parallax-background {
+	min-height: 1080px;
+}
+.arrow {
+	-webkit-animation-delay: 6s;
+	-moz-animation-delay: 6s;
+	-o-animation-delay: 6s;
+	animation-delay: 6s;
+}
+#main {
+	background-image: url('../images/bg2.png');
+	background-color: black;
+	background-attachment: fixed;
+	position: relative;
+
+}
+#projects {
+	/*background-color: #586C95; */
+	background-image: url('../images/grey.png');
+	background-attachment: fixed;
+	background-position: 100% 0;
+	position: relative;
+
+	-webkit-box-shadow: 3px 11px 35px 16px rgba(0,0,0,0.75);
+	-moz-box-shadow: 3px 11px 35px 16px rgba(0,0,0,0.75);
+	box-shadow: 3px 11px 35px 16px rgba(0,0,0,0.75);
+}
+#contact {
+	background-image: url('../images/green_cup.png');
+	background-attachment: fixed;
+	position: relative;
+
+	-webkit-box-shadow: 3px 11px 35px 16px rgba(0,0,0,0.75);
+	-moz-box-shadow: 3px 11px 35px 16px rgba(0,0,0,0.75);
+	box-shadow: 3px 11px 35px 16px rgba(0,0,0,0.75);
+}
+.row > div {
+	visibility:hidden;
+	border-radius: 2px;
+	border-top-style:none;
+	border-left-style: none;
+	border-right-style: none;
+	border-bottom-color: transparent;
+	width: auto;
+	height: auto;
+
+	/* Grey border-bottom transition */
+	transition: border-right-color 2s linear;
+	-moz-transition: border-right-color 2s linear;   
+	-o-transition: border-right-color 2s linear; 
+	-webkit-transition: border-right-color 2s linear;
+	
+}
+#first, #second, #third {
+	padding-right: 50px;
+	padding-left: -80px;
+}
+.stuff {
+	position: relative;
+	-webkit-animation: scaleDown 2s ease-out 2s;
+	-webkit-animation-fill-mode: both;
+
+	-moz-animation: scaleDown 2s ease-out 2s;
+	-moz-animation-fill-mode: both;
+
+	-o-animation: scaleDown 2s ease-out 2s;
+	-o-animation-fill-mode: both;
+
+	animation: scaleDown 2s ease-out 2s;
+	animation-fill-mode: both;
+}
+@-webkit-keyframes scaleDown {
+	from {
+		-webkit-transform: scale(1.0);
+		top: 350px;
+		left: 0%;
+	}
+
+	to {
+		-webkit-transform: scale(0.5);
+		top: -20px;
+		left: -2%;
+	} 
+}
+@-moz-keyframes scaleDown {
+	from {
+		-moz-transform: scale(1.0);
+		top: 350px;
+		left: 0%;
+	}
+	to {
+		-moz-transform: scale(0.5);
+		top: -20px;
+		left: 300%;
+	} 
+}
+@-o-keyframes scaleDown {
+	from {
+		-o-transform: scale(1.0);
+		top: 350px;
+		left: 0%;
+	}
+	to {
+		-o-transform: scale(0.5);
+		top: -20px;
+		left: -2%;
+	} 
+}
+@keyframes scaleDown {
+	from {
+		transform: scale(1.0);
+		top: 350px;
+		left: 0%;
+	}
+	to {
+		transform: scale(0.5);
+		top: -20px;
+		left: -2%;
+	} 
+}
+#cacheIMG {
+	position: relative;
+	height: 300px;
+	text-shadow: 0 1px 3px rgba(0,0,0,.5);
+	background-image:url("../images/androidIcon.png");
+	background-size:250px 250px;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #f7f7fa;
+
+}
+#vert {
+	position: relative;
+	top: 350px;
+
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-o-animation-delay: 1s;
+	animation-delay: 1s;
+}

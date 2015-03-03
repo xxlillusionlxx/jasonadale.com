@@ -120,6 +120,14 @@ h1, h2 {
 box-shadow: 3px 11px 35px 16px rgba(0,0,0,0.75);
 }
 
+#projects:hover {
+	opacity: .6;
+	color: pink;
+	position: relative;
+	border-radius: 5px;
+
+}
+
 #contact {
 	background-image: url('images/green_cup.png');
 	position: relative;

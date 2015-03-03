@@ -5,5 +5,5 @@ $(document).ready(function () {
 			$('#jumboEdit').addClass('animated wiggle');
 			$('.codeSnippet').addClass('animated wiggle');
 		}
-	})
+	});
 });

@@ -90,7 +90,7 @@
 		</div>
 
 		<!-- Landing -->
-		<section class="landing">
+		<section class="landing" id="landing">
 			<section class="bg-overlay">
     		</section>
 			<div class="splash">
@@ -131,6 +131,9 @@
 		    	 * 4: Contact
 		    	 */
 
+		    	 var width = document.getElementById('landing').offsetWidth;
+		    	 var height = $('.landing').height();
+
 		    	if($(this).attr('data-value') == 1) { // == should work since this is js; don't need to actually use type integer for this comparison.
 		    		if(topLayer === 1) // if currently the top layer, then do nothing
 		    			return;
@@ -138,6 +141,7 @@
 		    			elements[$(this).attr('data-value')].css("z-index", "3" );
 		    			$(elements[topLayer]).css("-webkit-clip-path", "inset(0px 0px 0px " + (ui.position.left) + "px)");
 		    			console.log("POS: " + ui.position.left);
+		    			console.log("Width:" + width);
 		    			if(ui.position.left == 800) { // check when it's reached the right side of screen ***TODO: find a generalized way to do this***
 		    				console.log("POS 2 ****: " + ui.position.left);
 		    				elements[$(this).attr('data-value')].css("z-index", "4" );
@@ -151,13 +155,15 @@
 		    			return;
 		    		else {
 		    			elements[$(this).attr('data-value')].css("z-index", "3" );
-		    			$(elements[topLayer]).css("-webkit-clip-path", "inset(0px 0px 0px " + (ui.position.left) + "px)");
+		    			//$(elements[topLayer]).css("-webkit-clip-path", "inset(0px 0px 0px " + (ui.position.left) + "px)");
+		    			$(Person.array[topLayer]).css("clip", "rect(0px" + width + "px"+height+"px"+ ui.position.left+"px)");
 		    			console.log("POS: " + ui.position.left);
+		    			console.log("Width:")
 		    			if(ui.position.left == 800) {
 		    				console.log("POS 2 ****: " + ui.position.left);
 		    				elements[$(this).attr('data-value')].css("z-index", "4" );
 		    				$(elements[topLayer]).css("z-index", "2");
-		    				$(elements[topLayer]).css("-webkit-clip-path", "inset(0px 0px 0px 0px)" );
+		    				//$(elements[topLayer]).css("-webkit-clip-path", "inset(0px 0px 0px 0px)" );
 		    				console.log("Real Top 2: " + elements[$(this).attr('data-value')].selector);
 		    				topLayer = 2;
 		    			}

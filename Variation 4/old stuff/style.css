@@ -89,9 +89,11 @@ body {
   	-o-background-size: cover;
   	background-size: cover;
 	overflow-y: auto;
+	clip: rect(0px calc(100%-175px) calc(100%) 0px);
+	/*
 	-webkit-clip-path: inset(0px 0px 0px 0px);
-	-moz-clip-path: inset(0px 0px 0px 0px); /* Animated clip-path not supported, so effect won't work; try simply using clip instead */
-	clip-path: inset(0px 0px 0px 0px);
+	-moz-clip-path: inset(0px 0px 0px 0px); /* Animated clip-path not supported, so effect won't work; try simply using clip instead 
+	clip-path: inset(0px 0px 0px 0px);*/
 	z-index: 4;
 }
 .splash {

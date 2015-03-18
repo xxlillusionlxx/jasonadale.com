@@ -1,0 +1,276 @@
+body {
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+.container {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	background-color: #2C3E50;
+	z-index: -1;
+}
+/* 
+==========================
+	LANDING (Home)
+==========================
+*/
+.content {
+	position: relative;
+	top: 30%;
+	width: 100%;
+	margin-top: calc(-183px/2);
+	text-align: center;
+	background-color: #2980B9;
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+#title {
+	font-family: "Lato";
+	font-size: 80px;
+	letter-spacing: 3px;
+	font-weight: 900;
+	border-top: 2px solid white;
+	width: 480px;
+	margin: 0 auto;
+	padding-top: 10px;
+	display: block; /* Since span is in-line; do this to make subtitle move to next line */
+}
+#subtitle {
+	font-size: 18px;
+	font-weight: 400;
+	font-family: "Lato";
+	width: 480px;
+	border-bottom: 2px solid white;
+	padding-bottom: 10px;
+	margin: 0 auto;
+	display: block;
+}
+.text {
+	width: 700px;
+	font-weight: 200;
+	letter-spacing: 2px;
+	line-height: 18px;
+	text-align: left;
+	margin: 0 auto;
+	margin-top: 60px;
+} /* end landing */
+/* 
+==========================
+	About
+==========================
+*/
+.about {
+	position: relative;
+	top: 30%;
+	width: 100%;
+	margin-top: calc(-183px/2);
+	text-align: center;
+	background-color: #E74C3C;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	display:none;
+}
+.abt-title {
+	font-family: "Lato";
+	font-size: 80px;
+	letter-spacing: 3px;
+	font-weight: 900;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+	width: 480px;
+	margin: 0 auto;
+	padding-top: 10px;
+	display: block; /* Since span is in-line; do this to make subtitle move to next line */
+}
+/* 
+==========================
+	Contact
+==========================
+*/
+.contact {
+	position: relative;
+	top: 30%;
+	width: 100%;
+	margin-top: calc(-183px/2);
+	text-align: center;
+	background-color: #ECF0F1;
+	color: #2C3E50;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	display: none;
+}
+.contact-title {
+	font-family: "Lato";
+	font-size: 80px;
+	letter-spacing: 3px;
+	font-weight: 900;
+	border-top: 2px solid #2C3E50;
+	border-bottom: 2px solid #2C3E50;
+	width: 480px;
+	margin: 0 auto;
+	padding-top: 10px;
+	display: block; /* Since span is in-line; do this to make subtitle move to next line */
+}
+/* 
+==========================
+	Projects
+==========================
+*/
+.projects {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: #3498DB;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	display: none;
+}
+.project-content {
+	position: relative;
+	width: calc((285px*4) + 40px);
+	margin: 0px auto;
+	left: calc( ((285px*3) + 40px)/16 );
+}
+.image {
+	width: 200px;
+	height: 200px;
+	border-radius: 25px;
+	border: 5px solid white;
+	float: left;
+	margin: 0px 75px 20px 0px;
+	outline: none;
+	background-color: orange;
+}
+.image-text {
+	width: 275px;
+	height: 200px;
+	text-align: left;
+	float: left;
+	margin: 0px 10px 10px 0px;
+}
+.image:nth-child(3n) {
+	/*margin-right: 0px; */
+}
+.image:nth-last-child(1), .image:nth-last-child(2), .image:nth-last-child(3) {
+	margin-bottom: 0px;
+}
+.ovrl-title {
+	font-family: "Lato";
+	font-size: 80px;
+	letter-spacing: 3px;
+	font-weight: 900;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+	width: 480px;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding-top: 10px;
+	display: block;
+}
+/* 
+==========================
+	NAV BAR
+==========================
+*/
+.nav-bar {
+	position: fixed;
+	margin: 0 auto;
+	bottom: 0;
+	right: calc((100% - 374px)/2); /* Horizonally center. 374px = width of nav-bar */
+  	border-top-left-radius: 5px;
+  	border-top-right-radius: 5px;
+}
+.nav-bar li {
+	position: 0 auto;
+	width: 80px;
+	margin: 0 auto;
+	color: #eaeaea;
+	text-align: center;
+	line-height: 40px;
+	padding-left: 5px;
+	list-style-type: none;
+	display: inline-block;
+	-webkit-transition: background-color 1s ease; /* So nav-background transitions with content area */
+	transition: background-color 1s ease;
+	-webkit-transition: color 1s ease;
+	transition: color 1s ease;
+	z-index: 99;
+}
+li:nth-of-type(1) {
+	background-color: #2980B9;
+	border-top-left-radius: 5px;
+}
+li:nth-of-type(2) {
+	background-color:#2980B9; 
+}
+li:nth-of-type(3) {
+	background-color: #2980B9;
+}
+li:nth-of-type(4) {
+	border-top-right-radius: 5px;
+	background-color: #2980B9;
+	padding-right: 10px;
+}
+/*
+==========================
+ 	Isi
+ 	Button fill effect from www.tympanus.com/codrops/
+==========================
+*/
+.button {
+	float: left;
+	display: block;
+	border: none;
+	background: none;
+	color: inherit;
+	vertical-align: middle;
+	position: relative;
+	z-index: 1;
+	-webkit-backface-visibility: visible;
+	-moz-osx-font-smoothing: grayscale;
+
+}
+.button:focus {
+	outline: none;
+}
+.button > span {
+	vertical-align: middle;
+}
+/* Borders */
+.button--border-thin {
+	border: 1px solid;
+}
+.button--isi {
+	color: #fff;
+	background: #7986cb;
+	overflow: hidden;
+}
+.button--isi::before {
+	content: '';
+	z-index: -1;
+	position: absolute;
+	top: 50%;
+	left: 100%;
+	margin: -15px 0 0 1px;
+	width: 30px;
+	height: 32px;
+	border-radius: 50%;
+	background: #2C3E50;
+	-webkit-transform-origin: 100% 50%;
+	transform-origin: 100% 50%;
+	-webkit-transform: scale3d(1, 2, 1);
+	transform: scale3d(1, 2, 1);
+	-webkit-transition: -webkit-transform 2s, opacity 0.3s, ease-out;
+	transition: transform 2s, opacity 0.3s, ease-out;
+}
+.button--isi > span {
+	vertical-align: middle;
+}
+.button--isi:hover::before {
+	-webkit-transform: scale3d(9, 9, 1);
+	transform: scale3d(9, 9, 1);
+}
